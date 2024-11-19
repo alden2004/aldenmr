@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombol Tengah</title>
+    <style>
+        body {
+            background-color: blue; /* Mengubah background menjadi biru */
+            display: flex;
+            justify-content: center; /* Memposisikan konten secara horizontal di tengah */
+            align-items: center; /* Memposisikan konten secara vertikal di tengah */
+            height: 100vh; /* Mengatur tinggi body agar memenuhi viewport */
+            margin: 0; /* Menghilangkan margin default */
+        }
+        .button-container {
+            display: flex;
+            gap: 10px; /* Jarak antar tombol */
+        }
+        .button {
+            padding: 10px 20px;
+            color: white;
+            border: 2px solid black; /* Menambahkan border hitam */
+            border-radius: 5px;
+            cursor: pointer; /* Mengubah kursor menjadi tangan saat hover */
+            transition: background-color 0.3s, transform 0.2s; /* Efek transisi */
+            text-shadow: 1px 1px 0 black; /* Menambahkan shadow hitam untuk teks */
+        }
+        .button1 { background-color: red; }
+        .button2 { background-color: orange; }
+        .button3 { background-color: yellow; }
+        .button4 { background-color: green; }
+        .button5 { background-color: blue; }
+
+        /* Efek hover untuk tombol */
+        .button:hover {
+            opacity: 0.8; /* Mengubah opasitas saat dihover */
+            transform: scale(1.05); /* Membesarkan tombol sedikit saat dihover */
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button button1">Belajar Sekarang</button>
+        <button class="button button2">Belajar Sekarang</button>
+        <button class="button button3">Belajar Sekarang</button>
+        <button class="button button4">Belajar Sekarang</button>
+        <button class="button button5">Belajar Sekarang</button>
+    </div>
+</body>
+</html>
